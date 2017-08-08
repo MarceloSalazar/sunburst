@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arm Mbed OS application</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div id="title">
+  <h1>Arm Mbed OS application</h1>
+</div>
+
+<div id="subtitle">
+  <h2>Static memory analisys</h2>
+</div>
+
+<div id="main">
+  <div id="sequence"></div>
+  <div id="chart">
+    <div id="explanation" style="visibility: hidden;">
+    <span id="percentage"></span><br/>
+    </div>
+  </div>
+</div>
+
+  <div id="sidebar">
+  <input type="checkbox" id="togglelegend" checked> Legend<br/>
+  <div id="legend" style="visibility: ""></div>
+  </div>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="app.js"></script>
+    <script type="text/javascript">
+      // Hack to make this example display correctly in an iframe on bl.ocks.org
+      d3.select(self.frameElement).style("height", "700px");
+ </script>
+</html>
